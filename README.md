@@ -13,4 +13,4 @@ A web app for managing deliveries and calculating routes
 # Setting the Google maps api key:
 ```export MAPS_API_KEY={key}```
 or in python: 
-```os.environ['MAPS_API_KEY'] = '{key}'```
+```os.environ['MAPS_API_KEY'] = 'key'```
