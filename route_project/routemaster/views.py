@@ -13,6 +13,7 @@ maps_api_key = os.environ.get('MAPS_API_KEY')
 
 # TODO: Put these views into different python modules if possible
 
+@login_required
 def index(request):
     return render(request, "routemaster/index.html")
 

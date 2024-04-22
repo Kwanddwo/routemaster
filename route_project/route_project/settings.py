@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'route_project.wsgi.application'
 
 
-# Database
+# Database (TODO: change to MySQL)
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
@@ -80,6 +80,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+AUTH_USER_MODEL = 'routemaster.User'
+
+LOGIN_URL = 'login'
 
 # AUTH_USER_MODEL = 'auctions.User' # Check if this is necessary
 
@@ -117,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
