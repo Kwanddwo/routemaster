@@ -4,6 +4,9 @@ A web app for managing deliveries and calculating routes
 # Activate virtual environment:
 ```source env/Scripts/activate```
 
+# Running the server:
+```python manage.py runserver```
+
 # Create requirements file:
 ```pip freeze > requirements.txt```
 
